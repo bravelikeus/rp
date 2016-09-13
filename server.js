@@ -3119,6 +3119,19 @@ module.exports =
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
+  var _ref2 = (0, _jsx3.default)('h1', {}, void 0, 'Stay Tuned'); /**
+                                                                   * React Starter Kit (https://www.reactstarterkit.com/)
+                                                                   *
+                                                                   * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
+                                                                   *
+                                                                   * This source code is licensed under the MIT license found in the
+                                                                   * LICENSE.txt file in the root directory of this source tree.
+                                                                   */
+  
+  var _ref3 = (0, _jsx3.default)('p', {}, void 0, 'In the mean time check out my ', (0, _jsx3.default)('a', {
+    href: 'dribbble.com/ryanincolor'
+  }, void 0, 'Dribbble'), ' profile');
+  
   function Home(_ref) {
     var news = _ref.news;
   
@@ -3126,29 +3139,8 @@ module.exports =
       className: _Home2.default.root
     }, void 0, (0, _jsx3.default)('div', {
       className: _Home2.default.container
-    }, void 0, (0, _jsx3.default)('h1', {
-      className: _Home2.default.title
-    }, void 0, 'React.js News'), (0, _jsx3.default)('ul', {
-      className: _Home2.default.news
-    }, void 0, news.map(function (item, index) {
-      return (0, _jsx3.default)('li', {
-        className: _Home2.default.newsItem
-      }, index, (0, _jsx3.default)('a', {
-        href: item.link,
-        className: _Home2.default.newsTitle
-      }, void 0, item.title), (0, _jsx3.default)('span', {
-        className: _Home2.default.newsDesc,
-        dangerouslySetInnerHTML: { __html: item.contentSnippet }
-      }));
-    }))));
-  } /**
-     * React Starter Kit (https://www.reactstarterkit.com/)
-     *
-     * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
-     *
-     * This source code is licensed under the MIT license found in the
-     * LICENSE.txt file in the root directory of this source tree.
-     */
+    }, void 0, _ref2, _ref3));
+  }
   
   exports.default = (0, _withStyles2.default)(_Home2.default)(Home);
 
